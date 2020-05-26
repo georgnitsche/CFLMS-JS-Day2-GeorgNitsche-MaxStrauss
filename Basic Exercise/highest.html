@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+	array = [7, 120, 240, 9];
+
+	// erste Option: 
+	
+	x = array.sort(function(a, b){return a - b});
+	console.log(x);
+	lastItem = x[x.length -1];
+	console.log(lastItem);
+
+	// zweite Option:
+
+	console.log(Math.max(...array));
+</script>
+</body>
+</html>
