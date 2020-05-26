@@ -6,44 +6,62 @@
     <title>Document</title>
     <style>
 
-        div{
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        #container{
             background-color: aqua;
-            width: 450px;
-            height: 300px;
+            width: 40%;
             text-align: center;
         }
 
+        img{
+            width: 75%;
+        }
         
+        #text{
+            margin-bottom:2%;
+            font-size: 2vw;
+        }
 
+        h1{
+            font-size: 4vw;
+        }
+
+        #temptext{
+            font-size: 2vw;
+        }
 
     </style>
 </head>
 <body>
     
-    <div>
+    <div id=container>
         <h1>TEMPERATURE</h1>
 
         <script>
         var temp = Math.floor(Math.random()*61-15);
 
-        document.write("Current Temperature: " + temp+ " Degrees" +"<br /> <br />");
+        document.write("<div id='temptext'>" + "Current Temperature: " + temp+ " Degrees" +"<br /> <br />" + "</div>");
      
 
 
             if (temp <= -5) {
-            document.write("The weather is freezing cold" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>");
+            document.write("<div id='text'>" + "The weather is freezing cold" + "</div>" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>");
             
             }else if (temp <= 10) {
-            document.write("The weather is cold" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            document.write("<div id='text'>" + "The weather is cold" + "</div>" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cold_weather.jpg/1920px-Cold_weather.jpg'>")
 
             }else if (temp <=20) {
-            document.write("The weather is moderate" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            document.write("<div id='text'>" + "The weather is moderate" + "</div>" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg/1920px-Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg'>")
             
             }else if (temp <=30) {
-            document.write("The weather is hot" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            document.write("<div id='text'>" + "The weather is hot" + "</div>" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Landmannalaugar_in_summer_2009_%2813%29.jpg/1920px-Landmannalaugar_in_summer_2009_%2813%29.jpg'>")
 
             }else {
-            document.write("The weather is very hot" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            document.write("<div id='text'>" + "The weather is very hot" + "</div>" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/South-Maroccan_Desert.jpg/1920px-South-Maroccan_Desert.jpg'>")
             }
 
         </script>
