@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            background-color: aqua;
+            width: 450px;
+            height: 300px;
+            text-align: center;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>TEMPERATURE</h1>
+
+        <script>
+        var temp = Math.floor(Math.random()*61-15);
+
+        document.write("Current Temperature: " + temp+ " Degrees" +"<br /> <br />");
+     
+
+
+            if (temp <= -5) {
+            document.write("The weather is freezing cold" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>");
+            
+            }else if (temp <= 10) {
+            document.write("The weather is cold" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+
+            }else if (temp <=20) {
+            document.write("The weather is moderate" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            
+            }else if (temp <=30) {
+            document.write("The weather is hot" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+
+            }else {
+            document.write("The weather is very hot" + "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ice_formations_2.jpg/800px-Ice_formations_2.jpg'>")
+            }
+
+        </script>
+
+
+    </div>
+</body>
+</html>
