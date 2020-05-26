@@ -5,7 +5,31 @@
 </head>
 <body>
 <script>
+	students = [["Martin", 76],["Klaus", 65],["Thomas", 85],["Marina", 93],["David", 81]];
+	grade = ["F","D","C","B","A"];
 
+
+
+	for (i=0; i <= students.length; i++) {
+		if (students[i][1]>=90){ 
+			document.write(students[i][0]+"hat ein A");
+	}
+			if (students[i][1]>=80 && students[i][1]<90){ 
+			document.write(students[i][0]+"hat ein B");
+	}
+				if (students[i][1]>=70 && students[i][1]<80){ 
+			document.write(students[i][0]+"hat ein C");
+	}
+				if (students[i][1]>=60 && students[i][1]<70){ 
+			document.write(students[i][0]+"hat ein D");
+	}
+ 				if (students[i][1]<60){ 
+			document.write(students[i][0]+"hat ein F");
+	}
+	
+
+	}
 </script>
 </body>
 </html>
+
